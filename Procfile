@@ -1,1 +1,1 @@
-python grass.py
+web: python grass.py
