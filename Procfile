@@ -1,1 +1,1 @@
-web: python grass.py
+worker: python grass.py
