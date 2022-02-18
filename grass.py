@@ -17,5 +17,7 @@ async def on_message(i):
             await i.channel.send("Touch some grass", delete_after=30)
         if 'league of legends' in c:
             await i.channel.send("Touch some grass", delete_after=30)
+        if '400 levels' in c:
+            await i.channel.send("Touch some grass", delete_after=30)
 
 client.run(token)
