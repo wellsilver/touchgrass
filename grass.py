@@ -12,10 +12,10 @@ async def on_message(i):
         print()
     else:
         if 'genshin' in c:
-            await i.channel.send("Touch some grass", delete_after=5)
+            await i.channel.send("Touch some grass", delete_after=30)
         if 'nft' in c:
-            await i.channel.send("Touch some grass", delete_after=5)
+            await i.channel.send("Touch some grass", delete_after=30)
         if 'league of legends' in c:
-            await i.channel.send("Touch some grass", delete_after=5)
+            await i.channel.send("Touch some grass", delete_after=30)
 
 client.run(token)
