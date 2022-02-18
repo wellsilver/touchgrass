@@ -1,7 +1,7 @@
 import discord
 client = discord.Client()
 token = 'OTQ0MzU0ODQyOTYzNTAxMDg3.YhAY-w.BrDq1UIRW5btYxSt7VEkkMDTIzo'
-
+y = json.loads(open("a.json", "r"))
 @client.event
 async def on_ready():
     print("Bot started")
@@ -11,18 +11,7 @@ async def on_message(i):
     if i.author.bot:
         print()
     else:
-        if 'genshin' in c:
-            await i.channel.send("Touch some grass", delete_after=30)
-        if 'nft' in c:
-            await i.channel.send("Touch some grass", delete_after=30)
-        if 'league of legends' in c:
-            await i.channel.send("Touch some grass", delete_after=30)
-        if '100 level' in c:
-            await i.channel.send("Touch some grass", delete_after=30)
-        if '200 level' in c:
-            await i.channel.send("Touch some grass", delete_after=30)
-        if '300 level' in c:
-            await i.channel.send("Touch some grass", delete_after=30)
-        if '400 level' in c:
-            await i.channel.send("Touch some grass", delete_after=30)
+        for i in y:
+            if i in c:
+                await i.channel.send(f"Touch some grass ", delete_after=30)
 client.run(token)
