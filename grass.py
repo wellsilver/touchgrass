@@ -3,7 +3,7 @@ import json
 #import time
 
 client = discord.Client()
-token = 'NzU5ODc4NDIzMzY2OTkxODcy.X3D57Q._MVhPWH56oYrgvusXuCYuF2bKcM'
+token = 'OTQ0MzU0ODQyOTYzNTAxMDg3.YhAY-w.BrDq1UIRW5btYxSt7VEkkMDTIzo'
 f = open('a.json',)
 data = json.load(f)
 @client.event
