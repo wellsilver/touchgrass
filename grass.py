@@ -10,7 +10,7 @@ data = json.load(f)
 async def on_ready():
     print("Bot started")
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f'Just restarted! V1.2'))
-    time.sleep(90)
+    time.sleep( 90 )
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f'V1.2'))
 @client.event
 async def on_message(l):
