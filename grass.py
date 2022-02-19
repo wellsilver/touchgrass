@@ -9,7 +9,6 @@ data = json.load(f)
 @client.event
 async def on_ready():
     print("Bot started")
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f'Just restarted! V1.1'))
     
 @client.event
 async def on_message(l):
@@ -18,8 +17,9 @@ async def on_message(l):
         print()
     else:
         for i in data['names']:
-            print(i)
+            
             if i in c:
                 await l.channel.send(f"Touch some grass {l.author.mention}", delete_after=30)
+                print(f"{l.author} needed to touch some grass")
                 return
 client.run(token)
