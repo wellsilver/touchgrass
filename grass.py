@@ -1,6 +1,6 @@
 import discord
 import json
-#import time
+import time
 
 client = discord.Client()
 token = 'OTQ0MzU0ODQyOTYzNTAxMDg3.YhAY-w.BrDq1UIRW5btYxSt7VEkkMDTIzo'
@@ -9,6 +9,9 @@ data = json.load(f)
 @client.event
 async def on_ready():
     print("Bot started")
+    await self.bot.change_presence(game=discord.Game(name="Just restarted! v1.1", type=1))
+    time.sleep(90)
+    await self.bot.change_presence(game=discord.Game(name="V1.1", type=1))
     
 @client.event
 async def on_message(l):
