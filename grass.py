@@ -14,7 +14,7 @@ async def on_ready():
 async def on_message(l):
     c = l.content.lower()
     if l.author.bot:
-        print()
+        return
     else:
         for i in data['names']:
             
