@@ -9,15 +9,18 @@ data = json.load(f)
 @client.event
 async def on_ready():
     print("Bot started")
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f'Just restarted! V1.2'))
-    time.sleep( 90 )
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f'V1.2'))
+    while true:
+        print("Tick!")
+        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f'1.2 | Grass help'))
+        time.sleep(600)
 @client.event
 async def on_message(l):
     c = l.content.lower()
     if l.author.bot:
         return
     else:
+        if c == "grass help":
+            l.reply("The grass bot has no commands sadly, you can see the .json with all keywords (and submit pull requests) that triggers the bot here https://wellsilver.github.io/a/dis.json
         for i in data['names']:
             
             if i in c:
