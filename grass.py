@@ -20,7 +20,7 @@ async def on_message(l):
         return
     else:
         if c == "grass help":
-            l.reply("The grass bot has no commands sadly, you can see the .json with all keywords (and submit pull requests) that triggers the bot here https://wellsilver.github.io/a/dis.json
+            l.reply("The grass bot has no commands sadly, you can see the .json with all keywords (and submit pull requests) that triggers the bot here https://wellsilver.github.io/a/dis.json")
         for i in data['names']:
             
             if i in c:
