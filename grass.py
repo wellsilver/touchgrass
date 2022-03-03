@@ -9,10 +9,7 @@ data = json.load(f)
 @client.event
 async def on_ready():
     print("Bot started")
-    while True:
-        print("Tick!")
-        await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f'1.2 | Grass help'))
-        time.sleep(600)
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.playing, name=f'1.2 | Grass help'))
 @client.event
 async def on_message(l):
     c = l.content.lower()
