@@ -4,7 +4,7 @@ import time
 
 client = discord.Client()
 # change token
-token = 'LOL NO'
+token = input('Token: ')
 # change token
 f = open('a.json',)
 data = json.load(f)
